@@ -19,4 +19,12 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 # Add path to search for modules
 set(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH};${PROJECT_SOURCE_DIR}/cmake")
 
+find_package(YAMLCPP REQUIRED)
+find_package(Sophus REQUIRED)
+find_package(Eigen3 REQUIRED)
+
+
 add_subdirectory(source)
+enable_testing()
+add_subdirectory(tests)
+

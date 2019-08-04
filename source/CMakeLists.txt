@@ -1,6 +1,4 @@
 # Find packages
-find_package(Sophus REQUIRED)
-find_package(Eigen3 REQUIRED)
 
 add_library(state SHARED
     State.cpp
