@@ -1,0 +1,80 @@
+# Configuration file for the kalman filter
+# All covariance matrices are diagonal
+
+history:
+  size: 300 # Maximum history size
+  tolerance: 1000 # [us]
+
+state:
+  # Starting state
+  attitude: [1, 0, 0, 0]
+  position: [0, 0, 0] # [m]
+  velocity: [0, 0, 0] # [m/s]
+
+  # Starting covariance
+  covariance: [0.001, 0.001, 0.001, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.00001, 0.00001, 0.00001, 0.00001, 0.00001, 0.00001]
+
+
+prediction:
+  # Unscented transform params
+  UT:
+    alpha: 0.05
+    beta: 2.0
+    kappa: 2
+
+  # Process noise covariance
+  Q_i: [0.001, 0.001, 0.001, 0.005, 0.005, 0.005, 1e-8, 1e-8, 1e-8, 1e-8,1e-8, 1e-8]
+
+imu_extrinsics:
+  rot: [1, 0, 0, 0]
+  pos: [0, 0.0, -0.16]
+
+updates:
+  imu_height: 0.17
+
+  lidar:
+    enabled: false
+    enable_outliers: true
+    # Unscented transform params
+    UT:
+      alpha: 0.1
+      beta: 2.0
+      kappa: 0.0
+    # Sensor noise covariance
+    R: [0.01]
+    # Log pose relative to IMU
+    extrinsics: [-0.0176875, 0.15, 0.0451484, -3.87759e-17,  -1.57,  2.44469e-17]
+    # Calibrated
+    lidar_bias: 0.075
+
+  planefit:
+    enabled: false
+    enable_outliers: true
+    # Unscented transform params
+    UT:
+      alpha: 0.1
+      beta: 2.0
+      kappa: 0.0
+    # Sensor noise covariance
+    R: [0.000001, 0.000001, 0.000001, 0.000001]
+    # Log pose relative to IMU
+    extrinsics: [0.088375, 2.21068e-16, -0.0686797, -3.87759e-17, -1.57, 2.44469e-17]
+
+  global_update:
+    enabled: true
+    enable_outliers: false
+    # Unscented transform params
+    UT:
+      alpha: 0.1
+      beta: 2.0
+      kappa: 0.0
+    # Sensor noise covariance
+    R: [0.003, 0.003, 0.003, 0.003, 0.003, 0.003]
+    # Log pose relative to IMU
+    extrinsics: [0.155, 1.3093e-19, -0.05, 0, 0, -1.68942e-18]
+
+sim_imu: false
+sim_lidar: false
+sim_planefit: false
+sim_global_update: false
+
