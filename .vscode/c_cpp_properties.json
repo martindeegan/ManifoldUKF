@@ -3,8 +3,8 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**",
-                "/usr/include/eigen3",
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/thirdparty/eigen-git-mirror",
                 "${workspaceFolder}/thirdparty/Sophus"
             ],
             "defines": [],
