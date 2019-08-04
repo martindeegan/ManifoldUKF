@@ -1,6 +1,6 @@
 # Manifold UKF
 
-Unscented Kalman filter on manifolds implementation. Was implemented for MAAV (Michigan Autonomous Aerial Vehicles) during the 2018-2019 school year.
+Unscented Kalman filter on matrix lie groups implementation. Was implemented for MAAV (Michigan Autonomous Aerial Vehicles) during the 2018-2019 school year.
 
 
 ## Filter Details
