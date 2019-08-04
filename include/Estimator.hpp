@@ -10,7 +10,7 @@
 #include <kalman/updates/PlanefitUpdate.hpp>
 #include <measurements/Measurement.hpp>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -42,4 +42,4 @@ private:
 };
 
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf

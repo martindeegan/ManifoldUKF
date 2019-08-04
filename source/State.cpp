@@ -1,7 +1,7 @@
 #include <Constants.hpp>
 #include <State.hpp>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -184,4 +184,4 @@ std::ostream& operator<<(std::ostream& os, const State& state)
 }
 
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf

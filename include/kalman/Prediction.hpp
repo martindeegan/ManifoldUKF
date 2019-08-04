@@ -7,7 +7,7 @@
 #include <kalman/History.hpp>
 #include <kalman/UnscentedTransform.hpp>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -35,6 +35,6 @@ protected:
     // For testing
     const PredictionUT& getUT() const { return transformation; }
 };
-}
-}
-}
+}  // namespace kalman
+}  // namespace gnc
+}  // namespace manifold_ukf

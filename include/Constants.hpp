@@ -4,7 +4,7 @@
 
 #include <Eigen/Dense>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -25,4 +25,4 @@ const Eigen::Vector3d ANN_ARBOR_MAGNETIC_FIELD = {18949.7, -2331.2, 49992.7};
 
 }  // namespace constants
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf

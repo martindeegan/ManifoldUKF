@@ -1,6 +1,6 @@
 #include <measurements/PlaneFitMeasurement.hpp>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -13,6 +13,6 @@ std::ostream& operator<<(std::ostream& os, const PlaneFitMeasurement& meas)
     os << "PlaneFit - z, z_vel: " << meas.height << ", " << meas.vertical_speed << '\n';
     return os;
 }
-}
-}
-}
+}  // namespace measurements
+}  // namespace gnc
+}  // namespace manifold_ukf

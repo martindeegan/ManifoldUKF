@@ -14,14 +14,14 @@
 #include "measurements/PlaneFitMeasurement.hpp"
 #include "measurements/VisualOdometry.hpp"
 
-using maav::gnc::kalman::History;
-using maav::gnc::measurements::GlobalUpdateMeasurement;
-using maav::gnc::measurements::ImuMeasurement;
-using maav::gnc::measurements::LidarMeasurement;
-using maav::gnc::measurements::Measurement;
-using maav::gnc::measurements::MeasurementSet;
-using maav::gnc::measurements::PlaneFitMeasurement;
-using maav::gnc::measurements::VisualOdometryMeasurement;
+using manifold_ukf::gnc::kalman::History;
+using manifold_ukf::gnc::measurements::GlobalUpdateMeasurement;
+using manifold_ukf::gnc::measurements::ImuMeasurement;
+using manifold_ukf::gnc::measurements::LidarMeasurement;
+using manifold_ukf::gnc::measurements::Measurement;
+using manifold_ukf::gnc::measurements::MeasurementSet;
+using manifold_ukf::gnc::measurements::PlaneFitMeasurement;
+using manifold_ukf::gnc::measurements::VisualOdometryMeasurement;
 
 constexpr size_t HISTORY_SIZE = 3;
 

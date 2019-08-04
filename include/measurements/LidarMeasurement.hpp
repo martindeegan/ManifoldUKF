@@ -7,7 +7,7 @@
 
 #include <State.hpp>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -96,6 +96,6 @@ private:
 std::ostream& operator<<(std::ostream& os, const LidarMeasurement& meas);
 }  // namespace measurements
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf
 
 #endif

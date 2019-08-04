@@ -2,15 +2,15 @@
 #include <iterator>
 #include <memory>
 
-#include <yaml_matrix/yaml_matrix.hpp>
 #include <kalman/History.hpp>
+#include <yaml_matrix/yaml_matrix.hpp>
 
-using maav::gnc::measurements::ImuMeasurement;
-using maav::gnc::measurements::Measurement;
-using maav::gnc::measurements::MeasurementSet;
+using manifold_ukf::gnc::measurements::ImuMeasurement;
+using manifold_ukf::gnc::measurements::Measurement;
+using manifold_ukf::gnc::measurements::MeasurementSet;
 using std::pair;
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -266,4 +266,4 @@ void History::setInitialBiases(const Eigen::Vector3d &gyro_bias, const Eigen::Ve
 
 }  // namespace kalman
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf

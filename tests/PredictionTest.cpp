@@ -12,15 +12,14 @@
 #include <sophus/so3.hpp>
 
 #include <Constants.hpp>
-#include <Constants.hpp>
 #include <kalman/Prediction.hpp>
 #include "TestHelpers.hpp"
 
 using namespace boost::unit_test;
 using namespace Eigen;
 
-using namespace maav::gnc::kalman;
-using namespace maav::gnc;
+using namespace manifold_ukf::gnc::kalman;
+using namespace manifold_ukf::gnc;
 
 class TestUkfPrediction : public UkfPrediction
 {

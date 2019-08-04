@@ -8,7 +8,7 @@
 #include <measurements/PlaneFitMeasurement.hpp>
 #include <measurements/VisualOdometry.hpp>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -40,4 +40,4 @@ using MeasurementSet = Measurement;
 
 }  // namespace measurements
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf

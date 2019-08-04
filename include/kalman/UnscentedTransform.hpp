@@ -10,7 +10,7 @@
 
 #include <State.hpp>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -142,4 +142,4 @@ void UnscentedTransform<TargetSpace>::set_transformation(Transform transform)
 
 }  // namespace kalman
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf

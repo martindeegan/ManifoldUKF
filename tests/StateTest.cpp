@@ -17,7 +17,7 @@
 using namespace boost::unit_test;
 using namespace Eigen;
 
-using namespace maav::gnc;
+using namespace manifold_ukf::gnc;
 
 BOOST_AUTO_TEST_CASE(ZeroStateTest)
 {

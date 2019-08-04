@@ -6,14 +6,14 @@
 #include <kalman/BaseUpdate.hpp>
 #include <measurements/PlaneFitMeasurement.hpp>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
 namespace kalman
 {
 /**
- * TODO: Combine this with maav::gnc::measurements::PlaneFit
+ * TODO: Combine this with manifold_ukf::gnc::measurements::PlaneFit
  * Represents the TargetSpace of the lidar update
  */
 class PFSensorMeasurement
@@ -125,6 +125,6 @@ private:
 };
 }  // namespace kalman
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf
 
 #endif

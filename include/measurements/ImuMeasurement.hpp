@@ -2,7 +2,7 @@
 
 #include <Eigen/Dense>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -23,4 +23,4 @@ std::ostream& operator<<(std::ostream& os, const ImuMeasurement& meas);
 
 }  // namespace measurements
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf

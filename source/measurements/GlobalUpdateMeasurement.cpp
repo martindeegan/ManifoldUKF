@@ -1,6 +1,6 @@
 #include <measurements/GlobalUpdateMeasurement.hpp>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -41,4 +41,4 @@ std::ostream& operator<<(std::ostream& os, const GlobalUpdateMeasurement& meas)
 }
 }  // namespace measurements
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf

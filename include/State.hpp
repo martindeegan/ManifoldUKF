@@ -7,7 +7,7 @@
 #include <sophus/se3.hpp>
 #include <sophus/so3.hpp>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -148,5 +148,4 @@ private:
 std::ostream& operator<<(std::ostream& os, const State& state);
 
 }  // namespace gnc
-}  // namespace maav
-
+}  // namespace manifold_ukf

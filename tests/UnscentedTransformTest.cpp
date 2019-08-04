@@ -25,8 +25,8 @@
 using namespace boost::unit_test;
 using namespace Eigen;
 
-using namespace maav::gnc::kalman;
-using namespace maav::gnc;
+using namespace manifold_ukf::gnc::kalman;
+using namespace manifold_ukf::gnc;
 
 State identity(const State& state) { return state; }
 BOOST_AUTO_TEST_CASE(IdentityTransformTest)

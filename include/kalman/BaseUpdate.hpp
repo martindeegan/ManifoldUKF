@@ -3,15 +3,15 @@
 #include <yaml-cpp/node/detail/bool_type.h>
 #include <yaml-cpp/yaml.h>
 
-#include <yaml_matrix/yaml_matrix.hpp>
 #include <kalman/Extrinsics.hpp>
 #include <kalman/History.hpp>
 #include <kalman/UnscentedTransform.hpp>
 #include <measurements/Measurement.hpp>
+#include <yaml_matrix/yaml_matrix.hpp>
 
 using std::placeholders::_1;
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -118,4 +118,4 @@ protected:
 };
 }  // namespace kalman
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf

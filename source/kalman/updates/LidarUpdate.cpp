@@ -1,8 +1,8 @@
 #include <kalman/updates/LidarUpdate.hpp>
 
-using maav::gnc::measurements::LidarMeasurement;
+using manifold_ukf::gnc::measurements::LidarMeasurement;
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -49,4 +49,4 @@ void LidarUpdate::operator()(History::Snapshot& snapshot)
 }
 }  // namespace kalman
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf

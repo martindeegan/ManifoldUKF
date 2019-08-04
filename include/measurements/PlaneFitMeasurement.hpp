@@ -2,7 +2,7 @@
 
 #include <ostream>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -24,4 +24,4 @@ std::ostream& operator<<(std::ostream& os, const PlaneFitMeasurement& meas);
 
 }  // namespace measurements
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf

@@ -1,8 +1,8 @@
-#include <yaml_matrix/yaml_matrix.hpp>
 #include <Constants.hpp>
 #include <kalman/Prediction.hpp>
+#include <yaml_matrix/yaml_matrix.hpp>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -93,4 +93,4 @@ State UkfPrediction::predict(const State& state)
 }
 }  // namespace kalman
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf

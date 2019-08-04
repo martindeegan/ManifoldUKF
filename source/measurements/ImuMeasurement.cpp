@@ -1,6 +1,6 @@
 #include <measurements/ImuMeasurement.hpp>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -13,6 +13,6 @@ std::ostream& operator<<(std::ostream& os, const ImuMeasurement& meas)
     os << "IMU - Angular Rate: " << meas.angular_rates.transpose() << '\n';
     return os;
 }
-}
-}
-}
+}  // namespace measurements
+}  // namespace gnc
+}  // namespace manifold_ukf

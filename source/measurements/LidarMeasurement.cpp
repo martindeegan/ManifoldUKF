@@ -1,6 +1,6 @@
 #include <measurements/LidarMeasurement.hpp>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -33,6 +33,6 @@ std::ostream& operator<<(std::ostream& os, const LidarMeasurement& meas)
     os << "Lidar Dist: " << meas.distance() << '\n';
     return os;
 }
-}
-}
-}
+}  // namespace measurements
+}  // namespace gnc
+}  // namespace manifold_ukf

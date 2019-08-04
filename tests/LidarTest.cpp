@@ -10,7 +10,6 @@
  * =============================================
  */
 
-
 #include <cmath>
 #include <vector>
 
@@ -24,9 +23,9 @@
 using namespace boost::unit_test;
 using namespace Eigen;
 
-using namespace maav::gnc::kalman;
-using namespace maav::gnc;
-using namespace maav::gnc::measurements;
+using namespace manifold_ukf::gnc::kalman;
+using namespace manifold_ukf::gnc;
+using namespace manifold_ukf::gnc::measurements;
 
 BOOST_AUTO_TEST_CASE(RunTest)
 {
@@ -40,7 +39,7 @@ BOOST_AUTO_TEST_CASE(RunTest)
     measurements::Measurement measurement;
     measurements::ImuMeasurement imu;
     imu.time_usec = 1000;
-    imu.acceleration = {0, 0, -maav::gnc::constants::STANDARD_GRAVITY};
+    imu.acceleration = {0, 0, -manifold_ukf::gnc::constants::STANDARD_GRAVITY};
     imu.angular_rates = Vector3d::Zero();
     imu.magnetometer = {0, 0, 1};
 
@@ -72,7 +71,7 @@ BOOST_AUTO_TEST_CASE(SimpleSensorModelTest)
     measurements::Measurement measurement;
     measurements::ImuMeasurement imu;
     imu.time_usec = 1000;
-    imu.acceleration = {0, 0, -maav::gnc::constants::STANDARD_GRAVITY};
+    imu.acceleration = {0, 0, -manifold_ukf::gnc::constants::STANDARD_GRAVITY};
     imu.angular_rates = Vector3d::Zero();
     imu.magnetometer = {0, 0, 1};
 
@@ -108,7 +107,7 @@ BOOST_AUTO_TEST_CASE(AdvancedSensorModelTest)
     measurements::Measurement measurement;
     measurements::ImuMeasurement imu;
     imu.time_usec = 1000;
-    imu.acceleration = {0, 0, -maav::gnc::constants::STANDARD_GRAVITY};
+    imu.acceleration = {0, 0, -manifold_ukf::gnc::constants::STANDARD_GRAVITY};
     imu.angular_rates = Vector3d::Zero();
     imu.magnetometer = {0, 0, 1};
 
@@ -143,7 +142,7 @@ BOOST_AUTO_TEST_CASE(SensorMeasuredTest)
     measurements::Measurement measurement;
     measurements::ImuMeasurement imu;
     imu.time_usec = 1000;
-    imu.acceleration = {0, 0, -maav::gnc::constants::STANDARD_GRAVITY};
+    imu.acceleration = {0, 0, -manifold_ukf::gnc::constants::STANDARD_GRAVITY};
     imu.angular_rates = Vector3d::Zero();
     imu.magnetometer = {0, 0, 1};
 

@@ -8,7 +8,7 @@
 #include <State.hpp>
 #include <measurements/Measurement.hpp>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -87,4 +87,4 @@ private:
 
 }  // namespace kalman
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf

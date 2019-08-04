@@ -3,9 +3,9 @@
 #include <Estimator.hpp>
 #include <State.hpp>
 
-using maav::gnc::measurements::MeasurementSet;
+using manifold_ukf::gnc::measurements::MeasurementSet;
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -72,4 +72,4 @@ void Estimator::setBiases(const Eigen::Vector3d& gyro_bias, const Eigen::Vector3
     history_.setInitialBiases(gyro_bias, accel_bias);
 }
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf

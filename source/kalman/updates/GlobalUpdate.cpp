@@ -1,8 +1,8 @@
 #include <kalman/updates/GlobalUpdate.hpp>
 
-using maav::gnc::measurements::GlobalUpdateMeasurement;
+using manifold_ukf::gnc::measurements::GlobalUpdateMeasurement;
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -45,4 +45,4 @@ void GlobalUpdate::operator()(History::Snapshot& snapshot)
 }
 }  // namespace kalman
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf

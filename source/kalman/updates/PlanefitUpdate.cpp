@@ -1,6 +1,6 @@
 #include <kalman/updates/PlanefitUpdate.hpp>
 
-namespace maav
+namespace manifold_ukf
 {
 namespace gnc
 {
@@ -62,4 +62,4 @@ void PlaneFitUpdate::operator()(History::Snapshot& snapshot)
 
 }  // namespace kalman
 }  // namespace gnc
-}  // namespace maav
+}  // namespace manifold_ukf
