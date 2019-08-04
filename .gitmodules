@@ -1,0 +1,6 @@
+[submodule "thirdparty/Sophus"]
+	path = thirdparty/Sophus
+	url = https://github.com/strasdat/Sophus.git
+[submodule "thirdparty/eigen-git-mirror"]
+	path = thirdparty/eigen-git-mirror
+	url = https://github.com/eigenteam/eigen-git-mirror.git
