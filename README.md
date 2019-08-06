@@ -10,3 +10,8 @@ The filter was developed for a quadcopter with an IMU, and a localizer update (V
 The filter executable is not included in this project as it contains too much MAAV specific code.
 
 https://www.youtube.com/watch?v=VQ0MW_FqMHI
+
+## Dependencies
+
+yaml-cpp
+cmake 3.10+
